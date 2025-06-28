@@ -41,7 +41,8 @@ async def start(client, message: pyrogram.types.Message):
                     temp.U_NAME, 
                     temp.B_NAME,
                 ),
-                reply_markup=reply_markup
+                reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
             )
         else:
             await message.reply_photo(
@@ -53,7 +54,8 @@ async def start(client, message: pyrogram.types.Message):
                     temp.U_NAME, 
                     temp.B_NAME,
                 ),
-                reply_markup=reply_markup
+                reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
             )
         await asyncio.sleep(2) # 😢 https://github.com/EvamariaTG/EvaMaria/blob/master/plugins/p_ttishow.py#L17 😬 wait a bit, before checking.
         
@@ -88,7 +90,8 @@ async def start(client, message: pyrogram.types.Message):
                 temp.U_NAME, 
                 temp.B_NAME,
             ),
-            reply_markup=reply_markup
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
         )
         return
 
