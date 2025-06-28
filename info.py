@@ -51,7 +51,7 @@ LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'DKBOTxCHATS')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
-SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), False)
+SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), False)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", None)
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating}</a> / 10\n<b>☀️ Languages:</b> #{languages}\n</b>")
@@ -65,7 +65,7 @@ PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 
 DELETE_TIME = int(environ.get('DELETE_TIME', 300))
-START_IMAGE_URL = environ.get('START_IMAGE_URL', "")
+START_IMAGE_URL = environ.get('START_IMAGE_URL', "https://envs.sh/2u1.jpg")
 UNAUTHORIZED_CALLBACK_TEXT = (environ.get('UNAUTHORIZED_CALLBACK_TEXT', "𝙏𝙃𝙄𝙎 𝙄𝙎 𝙉𝙊𝙏 𝙂𝙐𝘿 𝘿𝙐𝘿𝙀"))[:200]
 REDIRECT_TO = (environ.get('REDIRECT_TO', 0))
 
